@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+"lib": ["es6", "dom", "esnext"],
+        "module": "commonjs",
+        "declaration": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "removeComments": true,
+        "rootDir": ".",
+        "sourceMap": true,
+        "listFiles": false,
+        "outDir": "./build",
+        "experimentalDecorators": true
+    },
+    "compileOnSave": true,
+    "include": [
+        "src/**/*.ts",
+        "typings/index.d.ts",
+        "typings-custom/main.d.ts"
+    ],
+    "exclude": [
+	      "node_modules",
+	      "resources"
+    ]
+}

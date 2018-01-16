@@ -1,0 +1,19 @@
+{
+  "name": "uploadcattle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run clean && tsc -p tsconfig.json",
+    "clean": "rm -rf ./build",
+    "upload-files": "node --require source-map-support/register ./build/src/index.js",
+    "upgrade-interactive": "npm-check --skip-unused -u"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@triply/client.js": "^1.0.5",
+    "source-map-support": "^0.5.0",
+    "typescript": "^2.6.2"
+  }
+}
